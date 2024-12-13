@@ -17,8 +17,8 @@ end
 local keys = {
    -- misc/useful --
    { key = 'c', mods = 'LEADER', action = 'ActivateCopyMode' },
-   { key = 'F1', mods = 'NONE', action = act.ActivateCommandPalette },
-   { key = 'F3', mods = 'NONE', action = act.ShowLauncher },
+   { key = 'F2', mods = 'NONE', action = act.ActivateCommandPalette },
+   { key = 'F6', mods = 'NONE', action = act.ShowLauncher },
    { key = 'F4', mods = 'NONE', action = act.ShowLauncherArgs({ flags = 'FUZZY|TABS' }) },
    {
       key = 'F5',
@@ -134,11 +134,11 @@ local keys = {
    { key = 'Enter', mods = mod.SUPER,     action = act.TogglePaneZoomState },
    { key = 'x',     mods = mod.SUPER,     action = act.CloseCurrentPane({ confirm = false }) },
 
-   -- panes: navigation
-   { key = 'k',     mods = mod.SUPER_REV , action = act.ActivatePaneDirection('Up') },
-   { key = 'j',     mods = mod.SUPER_REV , action = act.ActivatePaneDirection('Down') },
-   { key = 'h',     mods = mod.SUPER_REV , action = act.ActivatePaneDirection('Left') },
-   { key = 'l',     mods = mod.SUPER_REV , action = act.ActivatePaneDirection('Right') },
+   -- panes: navigation       
+   { key = 'k',     mods = 'CTRL|SHIFT' , action = act.ActivatePaneDirection('Up') },
+   { key = 'j',     mods = 'CTRL|SHIFT' , action = act.ActivatePaneDirection('Down') },
+   { key = 'h',     mods = 'CTRL|SHIFT' , action = act.ActivatePaneDirection('Left') },
+   { key = 'l',     mods = 'CTRL|SHIFT', action = act.ActivatePaneDirection('Right') },
    {
       key = 'p',
       mods = mod.SUPER_REV,
